@@ -5,13 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CalculatorOP</title>
     <style>
+        .container{
+            .container {
+                display: grid;
+                grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px ;
+                grid-template-rows:100px 100px 100px 100px 100px 100px 100px 100px ;
+                padding: 10px;
+                gap: 10px;
+                width: 80%;
+                margin: 20px auto;
+                font-size: 30px;
+                text-align: center;
+                align-content: center;
+    
+              }
+        }
+        .item-1{
+            grid-column: 8/9;
+            grid-row: 8/9;
+            border: 1px solid black;
+            border-radius: 20px;
+            width: 50%;
+
+        }
         table{
             text-align: center;
         }
     </style>
 </head>
 <body>
-    
+<div class="container">
+<div style="background-color:pink" class="item-1">
 <center>
     <h1>CalculatorOP</h1><br>
     <table>
@@ -28,10 +52,12 @@
     <tr></tr>
     <tr><td><button type="Reset">Reset</button></td>
     <td><button type="Submit" onclick="function_Cal()">Calculate!</button></td></tr>
-    
-    </form>
+
+</form>
 </table>
 </center>
+</div>
+</div>
 <script src="WebJS.js"></script>
 </body>
 </html>
