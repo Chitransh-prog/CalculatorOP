@@ -105,7 +105,7 @@
                     r.value = a * b;
                     break;
                 case "/":
-                    r.value = b === 0 ? "Error: Division by 0" : a / b;
+                    r.value = b === 0 ? "ZeroDivisionError" : a / b;
                     break;
                 default:
                     r.value = "Invalid operator";
